@@ -1,0 +1,29 @@
+
+@import "{mikemurray:base-theme}/variables.less";
+@import "{mikemurray:extended-theme}/container.less";
+
+.base-component {
+    padding: 10rem;
+    color: #fff;
+
+    // @blue from {mikemurray:base-theme}/variables.less
+    background-color: @blue;
+}
+
+// If you wanted to apply the style of fun-box to your components
+.base-component-fun-box-unmodified {
+    // from {mikemurray:extended-theme}/containers.less
+    .fun-box();
+
+}
+
+
+// If you wanted to apply the style of fun-box to your components
+// and modify it a bit with variables from another theme package
+.base-component-fun-box {
+    // from {mikemurray:extended-theme}/containers.less
+    .fun-box();
+
+    // @red from {mikemurray:base-theme}/variables.less
+    background-color: @red;
+}
